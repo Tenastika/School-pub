@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+		<title>Digital School</title>
+		<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap" rel="stylesheet">
+		<!-- <link rel="stylesheet" href="css/fonts/style.css"> -->
+
+
+
+		
+		<link rel="stylesheet" href="libs/hamburger/hamburgers.css">
+		<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/responsive.css" media="(max-width: 1920px)">
+			
+	</head>
+
+	<body id="body">
+
+		
+		<div class="wrapper">
+		<section class="header" id="header">
+	<div class="container header__container">
+		<button class="hamburger hamburger--squeeze" type="button">
+  			<span class="hamburger-box">
+    			<span class="hamburger-inner"></span>
+  			</span>
+		</button>
+		<a class="header__logo" href="#">Learn. Love</a>
+		
+		<nav class="header__nav">
+			<ul class="header__list">
+				<li class="header__item">
+					<a href="#header" class="header__link">Home</a>
+				</li>
+				<li class="header__item">
+					<a href="#course" class="header__link">Course</a>
+				</li>
+				<li class="header__item">
+					<a href="#sorry-thanks" class=" header__link header__link3">Features</a>
+				</li>
+				<li class="header__item">
+					<a href="#sorry-thanks" class=" header__link header__link2">Blog</a>
+				</li>
+				<li class="header__item" >
+					<a class="header__link header__link1" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<ul class="header__login login">
+			<li class="login__item btn-login" >
+				<a  class="login__link"  href="#login-modals">Login</a>
+			</li>
+			<li class="login__item  signup">
+				<a class="login__link" href="#login-modals">Signup</a>
+			</li>
+		</ul>
+
+	</div>
+
+ <!-- Модальные окна вход/регистрация -->
+	
+</section>
+<div class="modals" id="login-modals">
+		<div class="modals__btn">
+			<button class="modals__btn-login btn-tab">Login</button>
+			<button class="modals__btn-reg btn-tab">Signup</button>
+		</div>
+		
+			<form class="modals__form-login form-tab" >
+				<input type="email" class="modals__form-login-email " placeholder="Email">
+				<label for="#password" class="pass-view-log">View</label>
+				<input type="password" class="modals__form-login-pas" id="password" placeholder="Password">
+				<label class="check-login"><input type="checkbox" class="modals__form-login-rem"><span class="checkstyle"></span><span>Remember me</span></label>
+				<button class="modals__form-login-btn" type="button">login</button>
+			</form>
+			<form class="modals__form-reg form-tab" >
+				<input type="email" class="modals__form-reg-email" placeholder="Email">
+				<label for="#password2" class="pass-view-reg">View</label>
+				<input type="password" class="modals__form-reg-pas" id="password2" placeholder="Password">
+				<label class="check-reg"><input type="checkbox" class="modals__form-reg-rem"><span class="checkstyle"></span><span>I accept the user agreement</span></label>
+				<button class="modals__form-reg-btn" type="button" >Signup</button>
+			</form>	
+</div>
+		<section class="school" id="school">
+	<div class="container">
+		<h1 class="school__title">Digital <br> 
+		<span>Learning</span> School</h1>
+		<p class="school__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non .</p>
+		<button class="school__btn" href="#contact">Get Started</button>
+		
+		<img src="img/school/photo.png" alt="foto" class="school__img" >	
+	</div>
+</section>
+
+		<section class="courses" id="course">
+	<div class="container">
+		<h2 class="courses__title">Our Popular Courses</h2>
+		<p class="courses__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat.</p>
+		<div class="courses__slider swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide"  data-fancybox="courses" href="#modal-course1">
+		
+					<img class="slide__img" src="img/courses/photo1.png" alt="photo">
+					<p class="slide__text">
+						<span class="slide__title">UX UI Design</span> <span>(3 Set available)</span class="slide__description">
+					</p>
+					
+				</div>
+				<div class="swiper-slide slide" data-fancybox="courses" href="#modal-course2">
+					<img class="slide__img" src="img/courses/photo2.png" alt="photo">
+					<p class="slide__text">
+						<span class="slide__title">Web Development</span><span>(9 Set available)</span class="slide__description">
+					</p>
+				</div>
+				<div class="swiper-slide slide" data-fancybox="courses" href="#modal-course3">
+					<img class="slide__img" src="img/courses/photo3.png" alt="photo">
+					<p class="slide__text">
+						<span class="slide__title">Digital Marketing</span> <span>(12 Set available)</span class="slide__description">
+					</p>
+				</div>
+				<div class="swiper-slide slide" data-fancybox="courses" href="#modal-course2">
+					<img class="slide__img" src="img/courses/photo2.png" alt="photo">
+					<p class="slide__text">
+						<span class="slide__title">Web Development</span> <span>(9 Set available)</span class="slide__description">
+					</p>
+				</div>
+   			</div>
+			<div class="slide__buttons">
+			   	<div class="swiper-button-prev"></div>
+	  			<div class="swiper-button-next"></div>
+			 </div>
+		</div>
+	</div>
+	
+</section>
+<!-- Модальные окна -->
+<div class="modal-course" id="modal-course1">
+		
+		<div class="modal-slide">
+			<h2>UX UI Design</h2>
+			<p class="slide__text">
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magni quasi quas veritatis hic amet architecto doloremque? Eveniet consequuntur alias, assumenda cum debitis autem quaerat veniam eius laborum ipsum similique?	
+			</p>
+		</div>
+					
+	</div>
+
+	<div  class="modal-course" id="modal-course2">
+		<div>
+		<h2>Web Development</h2>
+			<p class="slide__text">
+			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magni quasi quas veritatis hic amet architecto doloremque? Eveniet consequuntur alias, 	
+			</p>
+		</div>			
+	</div>
+
+	<div  class="modal-course" id="modal-course3">
+		<h2>Digital Marketing</h2>
+		<p class="slide__text">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, fuga? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magni quasi quas veritatis hic amet architecto doloremque? Eveniet consequuntur alias, assumenda cum debitis autem quaerat veniam eius laborum ipsum similique?	
+		</p>
+	</div>
+
+	<div  class="modal-course" id="modal-course2">
+	<h2>Web Development</h2>
+		<p class="slide__text">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam assumenda non corporis reiciendis fugiat dolores expedita velit harum, ullam similique.
+		</p>
+</div>
+		<section class="info" id="info">
+	<img class="info__background" src="img/info/rectan.png" alt="background">
+	<img class="info__img" src="img/info/photo.png" alt="photo">
+	
+	<div class="container">
+	
+	<div class="info__text">
+		<h2 class="info__title">How It Works?</h2>
+		<p class="info__txt">Lorem Ipsum is simply dummy text of the printing typesetting industry.</p>
+		<ul class="info__list">
+			<li class="info__item item">
+				<h3 class="item__title">Step One</h3>
+				<span class="item__text">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum is simply dummy text of the printing typesetting industry.</span>
+			</li>
+			<li class="info__item item">
+				<h3 class="item__title">Step Two</h3>
+				<span class="item__text">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum is simply dummy text of the printing typesetting industry.</span>
+			</li>
+			<li class="info__item item">
+				<h3 class="item__title">Step Three</h3>
+				<span class="item__text">Lorem Ipsum is simply dummy text of the printing typesetting industry. Lorem Ipsum is simply dummy text of the printing typesetting industry.</span>
+			</li>
+		</ul>
+	</div>
+	</div> 
+</section>
+		<section class="mentors" id="mentors">
+<div class="container">
+	<h2 class="mentors__title">Our Top Mentors</h2>
+	<p class="mentors__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia.</p>
+	<div class="mentors__list">
+		<div class="mentors__card" data-fancybox="mentors" href="#card1" >
+			<img class="mentors__card-photo" src="img/mentors/photo1.png" alt="photo">
+			<div class="mentors__card-info">
+				<h4 class="mentors__card-title">Jenny Wilson</h4>
+				<p class="mentors__card-text">UX UI Designer</p>
+				<p class="mentors__card-reit">(132 reviews)</p>
+			</div>	
+		</div>
+		<div class="mentors__card" data-fancybox="mentors" href="#card2">
+			<img class="mentors__card-photo" src="img/mentors/photo2.png" alt="photo">
+			<div class="mentors__card-info">
+				<h4 class="mentors__card-title">Guy Hawkins</h4>
+				<p class="mentors__card-text">Developer</p>
+				<p class="mentors__card-reit">(132 reviews)</p>
+			</div>
+		</div>
+		<div class="mentors__card" data-fancybox="mentors" href="#card3">
+			<img class="mentors__card-photo" src="img/mentors/photo3.png" alt="photo">
+			<div class="mentors__card-info">
+				<h4 class="mentors__card-title">Robert Fox</h4>
+				<p class="mentors__card-text">Digital Marketer</p>
+				<p class="mentors__card-reit">(132 reviews)</p>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+<!-- Модальные окна -->
+
+	<div class="mentors__card-modal"  id="card1">
+		<div class="mentors__card-modal-content">
+			<div class="mentors__card-modal-info">
+				<img class="mentors__card-modal-photo" src="img/mentors/photo1.png" alt="photo">
+				<div class="mentors__card-modal-user">
+				<h4>Jenny Wilson</h4>
+				<p>UX UI Designer</p>
+				<p class="mentors__card-reit">(132 reviews)</p>
+				</div>
+			</div>
+			<div class="mentors__card-modal-text">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, dolorem. Porro ex temporibus nihil velit possimus nisi maxime ducimus nostrum facilis accusantium reiciendis consequatur ullam rem fugiat modi, est dignissimos.
+			</div>
+		</div>		
+	</div>
+	<div class="mentors__card-modal" id="card2">
+		<div class="mentors__card-modal-content">
+			<div class="mentors__card-modal-info">
+				<img class="mentors__card-modal-photo" src="img/mentors/photo2.png" alt="photo">
+				<div class="mentors__card-modal-user">
+				<h4>Guy Hawkins</h4>
+				<p>Developer</p>
+				<p class="mentors__card-reit">(132 reviews)</p>
+				</div>
+			</div>
+			<div class="mentors__card-modal-text">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, dolorem. Porro ex temporibus nihil velit possimus nisi maxime ducimus nostrum facilis accusantium reiciendis consequatur ullam rem fugiat modi, est dignissimos.
+			</div>
+		</div>	
+		</div>
+	<div class="mentors__card-modal" id="card3">
+		<div class="mentors__card-modal-content">
+			<div class="mentors__card-modal-info">
+				<img class="mentors__card-modal-photo" src="img/mentors/photo3.png" alt="photo">
+				<div class="mentors__card-modal-user">
+				<h4>Robert Fox</h4>
+				<p>Digital Marketerr</p>
+				<p class="mentors__card-reit">(132 reviews)</p>
+				</div>
+			</div>
+			<div class="mentors__card-modal-text">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, dolorem. Porro ex temporibus nihil velit possimus nisi maxime ducimus nostrum facilis accusantium reiciendis consequatur ullam rem fugiat modi, est dignissimos.
+			</div>
+		</div>	
+	</div>
+
+		<section class="advantages" id="advantages">
+	<img class="advantages__background" src="img/advantages/back.png" alt="background">
+	<img class="advantages__img" src="img/advantages/photo.png" alt="photo">
+	
+	<div class="container">
+	
+	<div class="advantages__text">
+		<h2 class="advantages__title">Why Choose Us</h2>
+		<p class="advantages__txt">Lorem Ipsum is simply dummy text of the printing typesetting industry.</p>
+		<ul class="advantages__list">
+			<li class="advantages__card">
+				<span class="advantages__card-num">12+</span>Years Experience	
+			</li>
+			<li class="advantages__card">
+				<span class="advantages__card-num">350+</span>Teachers	
+			</li>
+			<li class="advantages__card">
+				<span class="advantages__card-num">30k+</span>Students	
+			</li>
+			<li class="advantages__card">
+				<span class="advantages__card-num">40+</span>Total Courses
+			</li>
+		</ul>
+	</div>
+	</div> 
+</section>
+		<section class="feedback" id="feedback">
+	<div class="container">
+		<h2 class="feedback__title">Our Students Feedback</h2>
+		<p class="feedback__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit</p>
+		<div class="feedback__slider swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide slide">
+					<p class="slide__text">
+					“Lorem Ipsum is simply dum text of the printing typesetting. Lorem Ipsum is the simply dummy text of the. Lorem Ipsum is simply dum text of one the printing typesetting. Lorem Ipsum.”
+					</p>
+					<div class="slide__student student1">
+					<h3 class="slide__student-name">Jane Cooper</h3>UX UI Design Student	
+					</div>
+				</div>
+				<div class="swiper-slide slide">
+					<p class="slide__text">
+					“Lorem Ipsum is simply dum text of the printing typesetting. Lorem Ipsum is the simply dummy text of the. Lorem Ipsum is simply dum text of one the printing typesetting. Lorem Ipsum.”
+					</p>
+					<div class="slide__student student2">
+					<h3 class="slide__student-name">Wade Warren</h3>Digital Marketing Student 	
+					</div>
+				</div>
+				<div class="swiper-slide slide">
+					<p class="slide__text">
+					“Lorem Ipsum is simply dum text of the printing typesetting. Lorem Ipsum is the simply dummy text of the. Lorem Ipsum is simply dum text of one the printing typesetting. Lorem Ipsum.”
+					</p>
+					<div class="slide__student student3">
+					<h3 class="slide__student-name">Esther Howard</h3>English Language Student
+					</div>
+				</div>
+				<div class="swiper-slide slide">
+					<p class="slide__text">
+					“Lorem Ipsum is simply dum text of the printing typesetting. Lorem Ipsum is the simply dummy text of the. Lorem Ipsum is simply dum text of one the printing typesetting. Lorem Ipsum.”
+					</p>
+					<div class="slide__student student2">
+					<h3 class="slide__student-name">Wade Warren</h3>Digital Marketing Student 	
+					</div>
+				</div>
+   			</div>
+			   <div class="slide__buttons">
+			   		<div class="swiper-button-prev"></div>
+	  			   <div class="swiper-button-next"></div>
+			   </div>
+		</div>
+	</div>
+	
+</section>
+		<section class="subscribe" id="subscribe">
+	<div class="container">
+		<h2 class="subscribe__title">Subscribe For Get Update News</h2>
+		<p class="subscribe__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit</p>
+		<button class="subscribe__btn" data-fancybox="subscribe" href="#modal-sub">Subscribe Now</button>
+	</div>
+</section>
+<!-- Модальное окно -->
+<div class="modal-sub" id="modal-sub">
+	<input type="email" class="modal-sub__input" placeholder="Email">
+	<label class="check-reg"><input type="checkbox" class="modal-sub__check"><span class="checkstyle"></span><span>I accept the user agreement</span></label>
+	<button class="modal-sub__btn" type='submit'>Subscribe</button>
+</div>                   
+		<section class="footer" id="footer">
+	<div class="container">
+		<div class="footer__info">
+			<div class="footer__left">
+				<p class="footer__left-title">Hello. Learn</p>
+				<p class="footer__left-text">Lorem Ipsum is simply the dummy text of the printing type.</p>
+			</div>
+			<div class="footer__items">
+				<div class="footer__block">
+					<h5 class="footer__block-title">Company</h5>
+					<ul class="footer__block-list">
+						<li class="footer__block-item">
+							<a href="" class="footer__block-link">About</a>
+						</li>
+						<li class="footer__block-item">
+							<a href="" class="footer__block-link">Careers</a>
+						</li>
+						<li class="footer__block-item">
+							<a href="" class="footer__block-link">Press</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__block">
+					<h5 class="footer__block-title">Community</h5>
+					<ul class="footer__block-list">
+						<li class="footer__block-item">
+							<a href="" class="footer__block-link">Team Plans</a>
+						</li>
+						<li class="footer__block-item">
+							<a href="" class="footer__block-link">Blog</a>
+						</li>
+						<li class="footer__block-item">
+							<a href="" class="footer__block-link">Students</a>
+						</li>
+						<li class="footer__block-item">
+							<a href="" class="footer__block-link">Scholarships</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__block">
+					<h5 class="footer__block-title">Teaching</h5>
+					<ul class="footer__block-list">
+						<li class="footer__block-item">
+							<a href="" class="footer__block-link">Become A Teacher</a>
+						</li>
+						<li class="footer__block-item">
+							<a href="" class="footer__block-link">Teaching Academy</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__block">
+					<h5 class="footer__block-title">Be social</h5>
+					<ul class="footer__block-list">
+						<li class="footer__block-item">
+							<img src="img/footer/f.png" alt="logo" class="footer__item-logo">
+							<a href="https://ru-ru.facebook.com/" class="footer__block-link" target="_blank">Facebook</a>
+						</li>
+						<li class="footer__block-item">
+						<img src="img/footer/t.png" alt="logo" class="footer__item-logo">
+							<a href="https://twitter.com/?lang=ru" class="footer__block-link" target="_blank">Twitter</a>
+						</li>
+						<li class="footer__block-item">
+						<img src="img/footer/i.png" alt="logo" class="footer__item-logo">
+							<a href="https://www.instagram.com/" class="footer__block-link" target="_blank">Instagram</a>
+						</li>
+						<li class="footer__block-item">
+						<img src="img/footer/l.png" alt="logo" class="footer__item-logo">
+							<a href="https://ru.wikipedia.org/wiki/LinkedIn" class="footer__block-link" target="_blank">Linkedin</a>
+						</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		<p class="footer_copyrite">Copyright 2020.com, All rights reserved.</p>
+	</div>
+</section>
+
+		
+	<div class="contacts" id="contact">
+		<h2 class="contacts__vert-title">contacts</h2>	
+		<div class="contacts__form">
+			
+			<h3 class="contacts__title">Contact us</h3>
+			<span>Let’s get to the nex level together</span>
+			<form  id= "contact-form">
+				<label for="contact-name">Full name</label>
+				<input class="contacts__form-name" id="contact-name" type="text" placeholder="Enter your first name" >
+
+				<label for="contact-email">Email</label>
+				<input class="contacts__form-email" id="contact-email" type="email" placeholder="Enter your email">
+
+				<label for="contact-txt">How can we help?</label>
+				<textarea cols="200" rows="10" class="contacts__form-txt" id="contact-txt" placeholder="Your message"></textarea>
+				<button class="contacts__form-btn" type="button">Send</button>
+			</form>
+		</div>
+		<ul class="contacts__list">
+		<li class="contacts__tel"><a href="#" target="_blank">+1 (647)-563-9114</a></li>
+		<li class="contacts__email"><a href="https://www.gmail.com/mail/help/intl/ru/about.html?de." target="_blank">lead@gmail.com</a></li>
+		<li class="contacts__map">
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae33dc1e725b61b39b1701fff8d5c2a47a1b8a667973e9c4916bb70542cc6ec37&amp;source=constructor" width="100%" height="328" frameborder="0"></iframe>	
+		<a href="https://yandex.ru/map-widget/v1/?um=constructor%3Ae33dc1e725b61b39b1701fff8d5c2a47a1b8a667973e9c4916bb70542cc6ec37&amp;source=constructor" target="_blank">Margaretenstraße 70/3, 1050 Vienna, Austria</a></li>
+		</ul>
+		</div>
+
+
+		<div class="contact-thanks" id="contact-thanks">
+	<h3>Thank you!</h3>
+	<p>We have received your message. We'll reply as soon as we can.</p>
+</div>
+<div class="contact-thanks" id="contact-sub-thanks">
+	<h3>Thank you!</h3>
+	<p>You have subscribed to our news</p>
+</div>
+<div class="contact-thanks" id="sorry-thanks">
+	<h3>Sorry!</h3>
+	<p>He page you want to go to is still in development</p>
+</div>
+
+
+		</div>
+
+		
+		
+		
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+		<script src = "https://code.jquery.com/jquery-3.4.1.min.js"> </script>
+		<script src="libs/fancybox/jquery.fancybox.js"></script>
+
+		<script src="js/script.js"></script>
+		
+		
+		
+	</body>
+</html>
